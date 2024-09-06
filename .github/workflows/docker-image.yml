@@ -28,8 +28,3 @@ jobs:
       - name: Run Docker container
         run: |
           docker run -d -p 3000:3000 --name react-app toba44/react-with-jenkins
-
-      - name: Verify Docker container
-        run: |
-          docker ps -a
-          curl http://localhost:3000  # Optional: Check if the app is up and running
